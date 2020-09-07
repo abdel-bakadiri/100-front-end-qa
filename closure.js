@@ -1,12 +1,11 @@
-const addOne = (function () {
+const addOne = function () {
   let counter = 0;
   return function () {
     counter++;
     return counter;
   };
-})();
-console.log(addOne());
-console.log(addOne());
-console.log(addOne());
-console.log(addOne());
-console.log(addOne());
+};
+result = addOne();
+console.log(result());
+console.log(result());
+

@@ -5,6 +5,8 @@ console.log(typeof []); // object
 console.log(typeof {}); // object
 console.log(typeof function () {}); //function
 console.log(typeof null); //object
+console.log(typeof new Date()); //object
+console.log(typeof /regex/); //object
 console.log(null instanceof Object); //false
 console.log({} instanceof Object); // true
 console.log([] instanceof Object); // true

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility hidden VS dissplay none</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      #red {
+        background-color: red;
+        /*  visibility: hidden => we are the space of element
+        display:none => the element move from the DOM*/
+        visibility: hidden;
+        /* display: none;  */
+      }
+      #green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ducimus.
+    </div>
+    <div id="green">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, inventore.
+    </div>
+  </body>
+</html>
